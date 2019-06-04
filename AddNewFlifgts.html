@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/newCss.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+        <div class="navbar-translate">
+            <a href="template.html" class="navbar-brand" >Home</a>
+            <!--<a class="navbar-brand" >About us</a>-->
+            <a href="Book%20Ticket.html" class="navbar-brand" >Book Ticket</a>
+            <a href="Register.html" class="navbar-brand" >Register</a>
+            <a href="userLogin.html" class="navbar-brand" >Login</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <a href="AdminLogin.html" class="nav-link">Admin login
+
+        </a>
+
+    </div>
+    </div>
+
+</nav>
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/register.jpg');height:900px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                <div class="brand">
+
+                    <h3>New Flights</h3>
+                    <div class="col-sm-6">
+                        <div class="card, panel panel-default">
+                            <!--<div class="panel-heading bg-blue">Book Ticket</div>-->
+                            <div class="panel-body">
+                                <form id="addNewFlightForm">
+                                    <div class="form-group" >
+                                        <label class="lbl">Flight No</label>
+                                        <input type="text" class="form-control" name="FlightNo" style="color: white">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">To City</label>
+                                        <input type="text" class="form-control" name="ToCity" style="color: white">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">From City</label>
+                                        <input type="text" class="form-control" name="FromCity" style="color: white">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">Flight Name</label>
+                                        <input type="text" class="form-control" name="FlightName"style="color: white" >
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">Arrival</label>
+                                        <input type="text" class="form-control" name="Arrival" style="color: white">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">Departure</label>
+                                        <input type="text" class="form-control" name="Departure" style="color: white">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label class="lbl">price</label>
+                                        <input type="text" class="form-control" name="price" style="color: white" >
+                                    </div>
+
+
+
+
+                                    <div class="form-group">
+
+                                        <button  type="button" class="btn btn-info" id="saveNewFlightBtn">Add</button>
+                                        <button  type="button" class="btn btn-facebook" id="deleteFlightBtn">Delete</button>
+                                        <button  type="button" class="btn btn-info" id="updateFlightBtn">Update</button>
+
+
+                                    </div>
+
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="application/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script type="application/javascript" src="assets/Controller/AddNewFlightController.js"></script>
+
+
+</body>
+</html>

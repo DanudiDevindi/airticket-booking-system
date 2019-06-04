@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/newCss.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+        <div class="navbar-translate">
+            <a href="template.html" class="navbar-brand" >Home</a>
+            <!--<a class="navbar-brand" >About us</a>-->
+            <a  class="navbar-brand" >Book Ticket</a>
+            <a href="Register.html" class="navbar-brand" >Register</a>
+            <a href="userLogin.html" class="navbar-brand" >Login</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <a href="AdminLogin.html" class="nav-link">Admin login
+        </a>
+
+    </div>
+    </div>
+
+</nav>
+<div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/aaaa.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                <div class="brand">
+
+                    <h2>Book your Airline Ticket</h2>
+                    <div class="col-sm-6">
+                        <div class="card, panel panel-default">
+                            <div class="panel-heading bg-blue">Book Ticket</div>
+                            <a class="panel-body row">
+                                <form id="TicketForm">
+
+                                    <label class="lbl">To City</label>
+                                    <select id="FromCityCombo" class="styleSelect" style="width: 100%" name="ToCity">
+                                    </select>
+                                    <label class="lbl">From City</label>
+                                    <select id="ToCityCombo" class="styleSelect" style="width: 100%" name="FromCity">
+                                       </select>
+                                    <div class="form-group">
+                                        <label >Date</label>
+                                        <input type="date" name="Date" max="3000-12-31" min="1000-01-01" class="form-control">
+                                    </div>
+
+
+                                    <div class="form-group" >
+                                        <label class="lbl">Passenger</label>
+                                        <input type="text" class="form-control" name="passenger">
+                                    </div>
+                                    <label class="lbl">Class</label>
+                                    <select id="cityCombo" class="styleSelect" style="width: 100%" name="classa">
+
+                                    </select>
+
+
+
+                                    <div class="form-group">
+                                        <button id="searchButton" type="button" class="btn btn-facebook">Search</button>
+                                        <button  type="button" class="btn btn-info" id="addTicketBtn">Submit</button>
+
+
+                                    </div>
+
+                                </form>
+
+                                <div class="col-12"><table class="table">
+                                    <thead class="border-light">
+                                    <tr>
+                                        <!--<th scope="col">#</th>-->
+                                        <th scope="col">FlightNo</th>
+                                        <th scope="col">To</th>
+                                        <th scope="col">From</th>
+                                        <th scope="col">Flight</th>
+                                        <th scope="col">Arrival</th>
+                                        <th scope="col">Departure</th>
+                                        <th scope="col">Price</th>
+
+                                        <!--<th scope="col">Action </th> -->
+                                    </tr>
+                                    </thead>
+                                    <tbody id="flightBody" >
+
+                                    </tbody>
+                                </table>
+                                </div>
+                                <div class="col-12">
+                                <button  type="button" class="btn btn-info"><a href="Register.html"> Book Now</a> </button>
+                                <button type="button" class="btn btn-danger"><a href="Payment.html"> click to payment
+                                </a> </button>
+                                </div>
+                            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="application/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script type="application/javascript" src="assets/Controller/BookTicketController.js"></script>
+
+</body>
+</html>
